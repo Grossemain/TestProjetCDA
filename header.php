@@ -1,11 +1,10 @@
 <?php
-//On démarre une nouvelle session
-session_start();
-/*On utilise session_id() pour récupérer l'id de session s'il existe.
-*Si l'id de session n'existe pas, session_id() renvoie une chaîne
-*de caractères vide*/
-$id_session = session_id();
-?>
+        //On démarre une nouvelle session
+        session_start();
+        //On définit des variables de session
+        $_SESSION['prenom'] = 'Pierre';
+        $_SESSION['age'] = 29;
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
