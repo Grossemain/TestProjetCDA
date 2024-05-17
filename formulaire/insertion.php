@@ -32,7 +32,8 @@ try{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé</title>
 </head>
-<body>
+<body class="CSS">
     <p>Merci</p>
+    <button><a href="/artiste/index.php">Retour à l'accueil</a></button>
 </body>
 </html>

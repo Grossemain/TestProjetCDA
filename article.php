@@ -1,10 +1,11 @@
 <?php
 //affiche le header.php avec include
-include 'header.php';
+include 'head.php';
 
 //affiche le menu.php avec include
-include 'menu.php';
+include 'header.php';
 ?>
+
 <body class="CSS">
         <main>
 <!--debut de la section informations-->
@@ -16,7 +17,6 @@ include 'menu.php';
             </div>
             <div class="colonne-2">
     <h1 class="titre-1">Apprendre le HTML 5</h1>
-    <h2 class="titre-2">Découvrez le <span>code HTML</span></h2>
                 </div>
             </section>
             <div class="container">

@@ -9,7 +9,7 @@
 <section id="contact">
             <div id="formulaire">
                 <h2 class="titre-2">Contact</h2>
-            <form method="post" action="./insertion.php">
+            <form method="post" action="./formulaire/insertion.php">
                 <label for="nom">Votre nom</label>
                 <input type="text" id="nom" name="nom" placeholder="Votre nom">
                 <label for="email">votre mail</label>

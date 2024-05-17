@@ -1,11 +1,11 @@
 <?php
 //affiche le header.php avec include
-include 'header.php';
-
-//affiche le menu.php avec include
-include 'menu.php';
+include 'head.php';
 ?>
 <body class="CSS">
+    <?php
+        include('./header.php');
+    ?>
         <main>
 <!--debut de la section informations-->
 <section id="informations">
