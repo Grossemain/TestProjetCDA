@@ -1,10 +1,10 @@
 <?php
 //affiche le header.php avec include
-include 'head.php';
+require 'head.php';
 ?>
 <body class="CSS">
     <?php
-        include('./header.php');
+        require('./header.php');
     ?>
         <main>
 <!--debut de la section informations-->
@@ -27,13 +27,13 @@ include 'head.php';
                                 <img src="img/apprendre-code.jpg" class="img-fluid">
                                     <h2 class="titre-2">Apprendre le HTML5</h2>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt laboriosam, magni odio saepe nam neque doloremque animi nisi, reprehenderit distinctio ducimus, a id placeat dignissimos cumque maiores natus esse numquam.</p>
-                                            <button class="bouton"><a href="article.php">lire la suite</a></button>
+                                            <button class="bouton"><a href="article.php?id=1">lire la suite</a></button>
                             </article>
                             <article class="col-sm">
                                 <img src="img/apprendre-code.jpg" class="img-fluid">
                                     <h2 class="titre-2">Apprendre le CSS3</h2>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt laboriosam, magni odio saepe nam neque doloremque animi nisi, reprehenderit distinctio ducimus, a id placeat dignissimos cumque maiores natus esse numquam.</p>
-                                            <button class="bouton"><a href="">lire la suite</a></button>
+                                            <button class="bouton"><a href="article.php?id=2">lire la suite</a></button>
                             </article>
                             <article class="col-sm">
                                 <img src="img/apprendre-code.jpg" class="img-fluid">
@@ -68,7 +68,7 @@ include 'head.php';
         </main>
 <?php
 //affiche le footer.php avec include
-include 'footer.php';
+require 'footer.php';
 ?>
 </body>
 </html>

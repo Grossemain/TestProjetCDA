@@ -218,5 +218,30 @@ function  getUserPassword()
     $infos = $query->fetch();
     return $infos['mot_de_passe'];
 }
+ // ******************************************* GENERATION CONTENU ****************************************************
 
+// ***************** générer la balise title ************************
+function  getTitleById()
+{
+    $db = getConnection();
+    $query = $db->prepare('SELECT title FROM article');
+    $executeIsOk = $query->execute();
+    $title = $query->fetch();
+}
 
+//***************** générer le contenu page article************************
+function  getContentById()
+{
+    if(isset($_GET["id"]) && !empty($_GET['id']))
+    {
+        $sql = "SELECT * FROM article WHERE idArticle =" . $_GET["id"];
+        $db = new PDO('mysql:host=localhost;dbname=comptes;charset=utf8', 'root', '');
+        $request = $db->prepare($sql);
+        $request = $db->query($sql);
+        $article = $request->fetch();
+    }
+    else
+    {
+        header('location:push_article.php');
+    }
+}

@@ -18,12 +18,12 @@ if (isset($_POST['userConnection'])) {
 }
 ?>
 <?php
-        include('./head.php');
+        require('./head.php');
 ?>
 <body class="CSS">
     <header>
         <?php
-        include('header.php');
+        require('header.php');
         ?>
     </header>
 
@@ -62,7 +62,7 @@ if (isset($_POST['userConnection'])) {
     </main>
 
     <?php
-    include('./footer.php');
+    require('./footer.php');
     ?>
 
 </body>

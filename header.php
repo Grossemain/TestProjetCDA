@@ -8,6 +8,6 @@
     }
     ?>
 <?php
-include('menu.php');
+require('menu.php');
 ?>
 </header>

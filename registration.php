@@ -2,13 +2,13 @@
 session_start();
 include('functions.php');
 
-include('./head.php');
+require('./head.php');
 ?>
 
 <body class="CSS">
     <header>
         <?php
-        include('header.php');
+        require('header.php');
         ?>
     </header>
 
@@ -80,7 +80,7 @@ include('./head.php');
     </main>
 
     <?php
-    include('./footer.php');
+    require('./footer.php');
     ?>
 
 </body>

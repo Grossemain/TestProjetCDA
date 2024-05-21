@@ -1,9 +1,9 @@
 <?php
 //affiche le head.php avec include
-include 'head.php';
+require 'head.php';
 
 //affiche le menu.php avec include
-include 'header.php';
+require 'header.php';
 ?>
 <body class="CSS">
 <main>
@@ -154,6 +154,6 @@ include './formulaire/contactForm.php';
     </main>
 <?php
 //affiche le footer.php avec include
-include 'footer.php';
+require 'footer.php';
 ?>
 </body>
